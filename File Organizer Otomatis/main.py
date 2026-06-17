@@ -18,9 +18,9 @@ FILE_TYPES = {
 }
 
 
-def get_folder_name(extension):
+def get_folder_name(extension): # type: ignore
     for folder_name, extensions in FILE_TYPES.items():
-        if extension.lower() in extensions:
+        if extension.lower() in extensions: # type: ignore
             return folder_name
     return "Others"
 
